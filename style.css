@@ -1,0 +1,400 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background-color: black;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    width: -webkit-fill-available;
+    z-index: 1000;
+}
+
+/* .forLogoImage a{
+    text-decoration: none;
+} */
+
+.forLogoImage img{
+    height: 70px;
+    width: 60px;
+    object-fit: cover;
+    margin-left: 5px;
+}
+
+.snprimeproperties{
+    color: gold;
+    position: absolute;
+    padding: 30px 20px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navlinksParent{
+    padding: 30px 0px;
+}
+
+.navlinksSubParent{
+    display: flex;
+    flex-direction: row;
+}
+
+a#navlinks {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 15px;
+    margin-left: 50px;
+}
+
+#mainvideo{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.navlinksSubparent a{
+    font-size: 16px;
+}
+
+a#navlinks:hover {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body-about{
+    display: flex;
+    flex-direction: row;
+}
+.aboutuslefttocontent{
+    width: 100%;
+}
+
+.aboutuslefttocontent img{
+    height: 500px;
+    width: 800px;
+}
+
+.aboutus-content{
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+#body-aboutus-titlename h3{
+    text-align: center;
+    font-size: 50px;
+    /* padding-top: 10px; */
+}
+
+.aboutus-content p{
+    font-size: 16px;
+    text-align: justify;
+}
+
+.body-aboutus{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body-aboutus-items{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 150px;
+    justify-content: center;
+}
+
+#body-aboutus-titlename h3{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.body-aboutus-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top:30px;
+}
+
+#aboutus-items-each{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#aboutus-items-each img{
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.aboutustextinsideimages{
+    width: -webkit-fill-available;
+    height: 0;
+    background: linear-gradient(#696969, #000000);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.aboutustextinsideimages h3{
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aboutustextinsideimages p{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .aboutustextinsideimages a{
+    margin-top: 20px;
+    color: gray;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+} */
+
+#aboutus-items-each:hover img{
+    transform: scale(1.1);
+}
+
+#aboutus-items-each:hover .aboutustextinsideimages{
+    height: 100%;
+}
+
+.body-projects{
+    display: flex;
+    flex-direction: column;
+}
+
+#body-projects-titlename{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#body-projects-titlename h3{
+    font-size: 50px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex: 0 0 100%;
+    position: relative;
+}
+
+.slide img {
+    object-fit: cover;
+    height: 502px;
+    width: 713px;
+    border-radius: 80px;
+    padding-right: 15px;
+    padding: 30px 15px 0px 80px;
+    text-align: end;
+}
+
+.text-overlay {
+    width: 50%;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:  90px 70px;
+}
+
+.text-overlay h3{
+    font-size: 50px;
+}
+
+.text-overlay p{
+    font-size: 22px;
+    padding-top: 30px;
+}
+
+button.Btn {
+    position: absolute;
+    top: 80%;
+    font-size: 24px;
+    cursor: pointer;
+    border-color: white;
+    width: 52px;
+    background: none;
+    color: white;
+}
+
+button.Btn:hover{
+    color:gray;
+}
+
+#prevBtn {
+    /* left: 0; */
+    right: 300px;
+}
+
+#nextBtn {
+    right: 250px;
+}
+
+.slide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.body-projects-imgs{
+    width: 50%;
+    text-align: end;
+}
+
+.body-contactus{
+    padding: 50px 100px 50px 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.body-contactus-part1{
+    display: grid;
+    flex-direction: column;
+    width: 50%;
+    justify-content: end;
+}
+
+.body-contactus-part2{
+    width: 50%;
+    text-align: left;
+}
+
+.body-contactus-part2 img{
+    height: 400px;
+    width: 400px;
+    /* margin-top: -80px; */
+    object-fit: cover;
+}
+
+.body-contactus-title h3{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body-contactus-each-item{
+    margin-top: 20px;
+}
+
+.body-contactus-each-item a{
+    text-decoration: none;
+}
+
+
+#body-contactus-icons{
+    color: white;
+}
+
+#body-contactus-icons:hover{
+    color: gray;
+}
+
+#body-contactus-titles{
+    color: white;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body-contactus-each-item-icons{
+    margin-top: 20px;
+    color: white;
+}
+
+.body-contactus-each-item-icons a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.body-contactus-each-item-icons a:hover{
+    color: gray;
+}
+
+.body-contactus-each-item-button a button{
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    height: 35px;
+    width: 160px;
+    border-radius: 2px;
+    margin-top: 30px;
+}
+
+.body-contactus-each-item-button a button:hover {
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+  }
+
+footer{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+}
+
+#line{
+    width: 100%;
+    height: 3px;
+    color: white;
+}
+
+.header-bar{
+    border: 1px;
+    height: 3px;
+    margin: 0px 80px;
+    margin-top: 80px;
+    background-color: gray;
+}
+
